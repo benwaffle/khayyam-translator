@@ -28,6 +28,7 @@ app.post('/groupme', (req, res) => {
 			.replace(/\bsleeping? on\b/i, 'missing out on')
 			.replace(/\bin heat\b/i, 'distraught')
 			.replace(/\balfred\b/i, 'albert')
+			.replace(/\bnut\b/i, 'natural number')
 
 		if (translated !== req.body.text) {
 			setTimeout(() =>  {
