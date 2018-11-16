@@ -31,7 +31,6 @@ app.post('/groupme', (req, res) => {
 			.replace(/\bwhip\b/i, 'move')
 			.replace(/\bnut\b/i, 'natural number')
 
-
 		if (translated !== req.body.text) {
 			setTimeout(() =>  {
 				fetch('https://api.groupme.com/v3/bots/post', {
