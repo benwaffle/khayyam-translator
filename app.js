@@ -29,6 +29,7 @@ app.post('/groupme', (req, res) => {
 			.replace(/\bin heat\b/i, 'distraught')
 			.replace(/\balfred\b/i, 'albert')
 			.replace(/\bwhip\b/i, 'move')
+			.replace(/\bnut\b/i, 'natural number')
 
 		if (translated !== req.body.text) {
 			setTimeout(() =>  {
